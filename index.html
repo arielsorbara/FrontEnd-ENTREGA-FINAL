@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>   <!--ENCABEZADO-->
+    <title>MediPharma Online</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<!--BODY_________________________________________________________________-->
+<body>
+<!--HEADER___________________________________________________________________-->
+<header>
+    <div class="contenedor barra-nav">
+        <div class="logo">
+            <img src="img/labo.png" alt="Icono" style="height: 1.5em; vertical-align: middle; margin-right: 8px; border-radius: 22%;">Medi<span>Pharma</span> Online
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li>
+                    <a href="finalizar.html" class="icono-carrito">
+                        <i class="fa-solid fa-cart-shopping"></i> Carrito
+                        <span id="contador-carrito" class="contador">0</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+    
+<!--MAIN___________________________________________________________________-->
+<main>
+    <section class="hero">
+        <h1>Catálogo 2026 / 27</h1>
+        <p>Productos e instrumentales médicos para el dia a dia de la medicina profesional.</p>
+    </section>
+
+    <section id="productos" class="contenedor">
+        <h2 class="titulo-seccion">Nuestros productos</h2>
+
+        <div class="grilla-productos" id="grilla-productos">
+            
+        </div>
+    </section>
+
+    <section id="contacto" class="contenedor">
+        <h2 class="titulo-seccion">Donde encontrarnos</h2>
+
+        <div class="bloque-contacto">
+            <div class="datos-contacto">
+                <h3>Local Principal</h3>
+                <ul>
+                    <li><i class="fa-solid fa-location-dot"></i> Pasteur 400, CABA - Argentina</li>
+                    <li><i class="fa-solid fa-clock"></i> Lunes a viernes de 9 a 18 hs.</li>
+                </ul>
+
+                <h3>Teléfonos</h3>
+                <ul>
+                    <li><i class="fa-solid fa-phone"></i> Ventas: <a href="tel:+541149410100">+54 11 4941-0100</a></li>
+                    <li><i class="fa-solid fa-headset"></i> Consultas: <a href="tel:+541149410100">+54 11 4941-0100</a></li>
+                    <li><i class="fa-brands fa-whatsapp"></i> Whatsapp: <a href="tel:+541149410100">+54 11 4941-0100</a></li>
+                    <li><i class="fa-solid fa-envelope"></i> <a href="mailto:info@medipharma.com">info@medipharma.com</a></li>
+                </ul>
+            </div>
+
+            <div class="mapa">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.016888272186!2d-58.40215142343516!3d-34.60373885749806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaeb64d76709%3A0xd7d4324519b4d3e8!2sPasteur%20400%2C%20C1028AAJ%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1710000000000!5m2!1ses!2sar"
+                    width="100%"
+                    height="300"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+</main>
+<!--FOOTER___________________________________________________________________-->
+<footer>
+
+    <div class="contenedor footer-columnas">
+        <div class="columna">   <!--info de la tienda-->
+            <h4>MediPharma Online</h4>
+            <p> Tienda de articulos medicos como ejemplo para el curso
+                de desarrollo web de TalentoTech 2026</p>
+        </div>
+
+        <div class="columna">   <!--contacto-->
+            <h4>Contacto</h4>
+            <ul>
+                <li><i class="fa-solid fa-envelope"></i> info@medipharma.com</li>
+                <li><i class="fa-solid fa-phone"></i> +54 11 4941-0100</li>
+                <li><i class="fa-brands fa-whatsapp"></i> +54 11 4941-0100</li>
+                <li><i class="fa-solid fa-location-dot"></i> Pasteur 400, CABA - Argentina</li>
+            </ul>
+        </div>
+
+        <div>   <!--redes sociales-->
+            <h4>Seguinos</h4>
+            <p>@MediPharma</p>
+            <div class="redes">
+                <a href="#" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" title="X"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+
+</footer>
+
+<script src="http://cdn.jsdelivr.net/npm/sweetalert2@11.12.4/dist/sweetalert2.all.min.js"></script>
+<script src="js/productos.js"></script>
+<script src="js/carrito.js"></script>
+<script src="js/index.js"></script>
+
+</body>
+</html>

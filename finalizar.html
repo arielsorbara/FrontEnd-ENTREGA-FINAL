@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Finalizar compra - MediPharma Online</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <div class="contenedor barra-nav">
+    <div class="logo">
+      <img src="img/labo.png" alt="Icono" style="height: 1.5em; vertical-align: middle; margin-right: 8px; border-radius: 22%;">Medi<span>Pharma</span> Online
+    </div>
+
+    <nav>
+      <ul class="menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li>
+          <a href="finalizar.html" class="icono-carrito">
+            <i class="fa-solid fa-cart-shopping"></i> Carrito
+            <span id="contador-carrito" class="contador">0</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="contenedor">
+  <h2 class="titulo-seccion">Finalizar compra</h2>
+
+  <div class="bloque-checkout">
+
+    <section class="resumen-carrito">
+      <h3>Tu carrito</h3>
+      <div id="lista-carrito"></div>
+
+      <p class="total">Total: <span id="total-carrito">$0</span></p>
+      <button class="boton-secundario" onclick="vaciarCarrito(); mostrarCarrito();">
+        <i class="fa-solid fa-trash"></i> Vaciar carrito
+      </button>
+    </section>
+
+    <section class="formulario-compra">
+      <h3>Tus datos</h3>
+
+      <label for="nombre">Nombre</label>
+      <input type="text" id="nombre" placeholder="Tu nombre">
+
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="Tu mail">
+
+      <button class="boton" onclick="finalizarCompra()">
+        <i class="fa-solid fa-check"></i> Confirmar compra
+      </button>
+    </section>
+
+  </div>
+</main>
+
+<footer>
+  <p class="copyright">&copy; 2026 MediPharma Online </p>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.12.4/dist/sweetalert2.all.min.js"></script>
+<script src="js/productos.js"></script>
+<script src="js/carrito.js"></script>
+<script src="js/finalizar.js"></script>
+
+</body>
+</html>
